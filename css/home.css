@@ -24,7 +24,7 @@ html, body {
   margin-top: 80px;
   font-family: sans-serif;
 }
-.written-main .heading{
+.written-main .h1{
   color: rgb(140, 136, 136);
   font-size: 2.5rem;
   letter-spacing: 2px;
@@ -46,3 +46,4 @@ html, body {
   text-decoration: none;
   color: #9e9191;
 }
+ 
