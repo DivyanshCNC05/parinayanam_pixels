@@ -1,183 +1,39 @@
-* {
+body, html {
+  height: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.custom-card-1 {
-  background-color: #ffffff;
-  padding: 30px 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  max-width: 300px;
-  text-align: center;
+.hero {
+  background-image: url('/assets/namanverma-cover.jpg'); /* Use your collage image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 
-.custom-card-1:hover {
-  background-color: #f48000;
-  color: white;
-  transition: all 0.4s ease-out;
-}
-
-.custom-card-1:hover h2,
-.custom-card-1:hover h3,
-.custom-card-1:hover p {
-  color: white;
-}
-
-.custom-card-1 img {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
-  display: block;
-}
-
-.custom-card-1 h2 {
-  font-size: 24px;
-  color: #1d3557;
-  margin: 10px 0 5px;
-}
-
-.custom-card-1 h3 {
-  font-size: 20px;
-  color: #000000;
-  margin: 5px 0 15px;
-  font-weight: bold;
-}
-
-.custom-card-1 p {
-  font-size: 14px;
-  color: #555555;
-  line-height: 1.6;
-}
-
-
-.custom-card-2-1 {
-  background-color: #b21f2d;
-  /* Dark red background */
-}
-
-.custom-card-2-2 {
-  background-color: #c9402b;
-  /* Dark red background */
-}
-
-.custom-card-2-3 {
-  background-color: #f05c2b;
-  /* Dark red background */
-}
-
-.custom-card-2-4 {
-  background-color: #f9a226;
-  /* Dark red background */
-}
-
-.custom-icon-2 {
-  font-size: 3.25rem;
-}
-
-.custom-description-2 {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.wcu-1 {
-  background-color: #ad2627;
-}
-
-.wcu-2 {
-  background-color: #c9402b;
-}
-
-.wcu-3 {
-  background-color: #f05c2b;
-}
-
-.wcu-4 {
-  background-color: #ec802a;
-}
-
-.wcu-5 {
-  background-color: #f9a226;
-}
-
-.wcu-6 {
-  background-color: #ad2627;
-}
-
-.wcu-img {
-  width: 10%;
-}
-
-.wcu-img-l {
-  width: 3%;
-}
-
-.news-card {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  border: 1px solid #d33b2f;
-  border-radius: 25px;
-  padding: 20px;
+.content-box {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  z-index: 2;
 }
 
-.news-meta {
-  color: #555;
-  font-size: 14px;
+.cust-logo {
+  max-width: 10px;
+  width: 25%;
+}
+
+.enter-btn {
+  padding: 6px 10px;
   font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
-.news-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #111;
-}
-
-.read-more-btn {
-  background-color: #a82323;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  padding: 8px 20px;
-  border: none;
-  transition: 0.3s;
-}
-
-.read-more-btn:hover {
-  background-color: #8c1d1d;
-}
-
-.news-img {
-  max-width: 200px;
-  border-radius: 10px;
-}
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {}
-
-
-
-
-
-
-@media only screen and (min-width: 1030px) and (max-width: 1605px) {
-  .hero-title {
-    padding-top: 4rem;
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #f05c2b;
-  }
-
-  .hero-subtitle {
-    font-size: 1.25rem;
-  }
-
-  .hero-video>video {
-    margin-top: 2rem;
-    border-radius: 5%;
-  }
+.enter-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
