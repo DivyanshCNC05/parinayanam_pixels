@@ -1,0 +1,36 @@
+@import url(https://db.onlinewebfonts.com/c/9262e77ed678f97830a52da91ffe9a7d?family=Dream+Caps+W00+Regular);
+body{
+    background-color: #f9f4ed;
+}
+.container-fluid{
+    background-color: #f9f4ed;
+}
+.right-section{
+    padding-top: 130px;
+}
+.right-section h1{
+    font-family: "Dream Caps W00 Regular";
+    text-decoration: none;
+    font-size: 2rem;
+}
+.right-section .head{
+     font-family: "body";
+     font-weight: 600;
+    text-decoration: none;
+    color: #575757;
+    font-size: 1.1rem;
+}
+.right-section .para{
+    font-family: "Dream Caps W00 Regular";
+    color: #555;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+}
+.left-section img{
+    height: 80%;
+    width: 89%;
+}
+.imhj img{
+    height: 200px;
+    width: 200px;
+}

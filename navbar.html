@@ -1,0 +1,72 @@
+
+<style>
+img{
+    width: 200px;
+    height: 80px;
+    padding-top: 15px;
+}
+
+.nav-main{
+    flex-direction: column;
+}
+
+.navbar-nav{
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black; */
+    margin-top: .5em;
+
+}
+
+.nav-item{
+    padding:1rem;
+}
+
+.nav-item a{
+margin-left: 15px;
+margin-right: 15px;
+font-family:DREAM ;
+}
+
+@media screen and (max-width:990px) {
+  .navbar-brand  img{
+        padding-left:0 ;
+    }
+    .nav-main{
+    flex-direction:row;
+}
+}
+
+</style>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+  <div class="container-fluid nav-main">
+    <a class="navbar-brand" href="#">
+      <img src="assets/nav-logo.png" alt="">  
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GALLERIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">STORIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="testimonial.html" >TESTIMONIALS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Eniquire.html">ENQUIRE</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
