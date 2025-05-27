@@ -1,0 +1,22 @@
+@import url(https://db.onlinewebfonts.com/c/9262e77ed678f97830a52da91ffe9a7d?family=Dream+Caps+W00+Regular); 
+    
+.img-section img{
+    height: 550px;
+    max-width: 100%;
+    width: 3000px;
+}
+.ritten-section h1{
+    text-decoration: none;
+    letter-spacing: 1.7px;
+    color: rgb(44, 43, 43);
+    font-family: "Dream Caps W00 Regular";
+}
+.ritten-section a{
+    text-decoration: none;
+}
+.ritten-section .date{
+    color: rgb(127, 116, 116);
+}
+.ritten-section .read{
+    color: black;
+}

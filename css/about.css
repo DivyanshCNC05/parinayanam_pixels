@@ -32,5 +32,21 @@ body{
 }
 .imhj img{
     height: 200px;
-    width: 200px;
+    width: 150px;
+}
+.imhj-2 img{
+    height: 377.33px;
+    width: 346px;
+}
+.imhj-3 img{
+    height: 80px;
+    width: 346px;
+}
+.imhj-4 img{
+    height: 60.1px;
+    width: 100%;
+}
+.fotr img{
+    height: 110px;
+    width: 3500px;
 }
