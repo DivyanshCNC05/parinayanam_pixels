@@ -1,0 +1,80 @@
+@import url(https://db.onlinewebfonts.com/c/9262e77ed678f97830a52da91ffe9a7d?family=Dream+Caps+W00+Regular);
+.slider-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slider-item {
+        width: 900px;
+        height: 700px;
+      flex: 0 0 25%; /* Show 4 items */
+      padding-top:  10px;
+      box-sizing: border-box;
+    }
+
+    .slider-item img {
+      width: 560px;
+      height: 650px;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .slider-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 10px;
+      box-sizing: border-box;
+      pointer-events: none; /* Let buttons float without blocking */
+    }
+
+    .slider-controls button {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      font-size: 24px;
+      border-radius: 50%;
+      pointer-events: all; /* Enable button clicks */
+    }
+
+    @media (max-width: 768px) {
+      .slider-item {
+        flex: 0 0 50%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .slider-item {
+        flex: 0 0 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .slider-item {
+        flex: 0 0 100%;
+      }
+    }
+
+    .gallery-written h1{
+        font-family: "Dream Caps W00 Regular";
+    }
+    .gallery-written .gallery-para-1{
+        padding-left: 2px;
+        color: rgb(164, 161, 161);        
+    }
+    .gallery-written .gallery-para-2{
+        color: #575757; 
+    }
+    .container-fluid{
+        background-color: #f5f1eb;
+    }

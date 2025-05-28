@@ -1,6 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/9262e77ed678f97830a52da91ffe9a7d?family=Dream+Caps+W00+Regular);
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -22,30 +23,151 @@ html, body {
   color: #fff;
   text-shadow: 1px 1px 5px #000;
 }
-.written-main{
-  margin-top: 80px;
+
+.written-main {
+  margin-top: 50px;
 }
-.written-main .h1{
-  color: rgb(140, 136, 136);
+
+.written-main .heading {
+  color: #575757;
   font-size: 2.5rem;
   letter-spacing: 2px;
   margin-bottom: 30px;
-}
-.written-main p{
-  color: #9e9191;
   font-family: "Dream Caps W00 Regular";
+}
+
+.written-main p {
+  color: #575757;
   word-spacing: 2.5px;
   line-height: 1.64rem;
 }
-.written-main .last{
+
+.written-main .last {
   letter-spacing: 2.5px;
 }
-.written-main .lst{
+
+.written-main .lst {
   letter-spacing: 2.3px;
   font-size: .88rem;
 }
-.col-4 a{
+
+.col-4 a {
   text-decoration: none;
-  color: #9e9191;
+  color: #575757;
 }
- 
+
+.collage-sec img {
+  width: 373px;
+  height: 410px;
+}
+
+/* For Automatic Slider */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-item {
+  height: 700px;
+  flex: 0 0 25%;
+  /* Show 4 items */
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  display: block;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+  /* Let buttons float without blocking */
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 24px;
+  border-radius: 50%;
+  pointer-events: all;
+  /* Enable button clicks */
+}
+
+@media (max-width: 768px) {
+  .slider-item {
+    flex: 0 0 50%;
+  }
+
+  .written-main .heading {
+    color: #575757;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: "Dream Caps W00 Regular";
+  }
+
+  .written-main p {
+    font-size: 0.9rem;
+  }
+
+  .written-main .last {
+    font-size: 0.8rem;
+  }
+
+  .written-main .lst {
+    letter-spacing: .5px;
+    font-size: .7rem;
+  }
+
+  .collage-sec img {
+    width: 190px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-item {
+    flex: 0 0 100%;
+  }
+
+  .written-main .heading {
+    color: #575757;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: "Dream Caps W00 Regular";
+  }
+
+  .written-main p {
+    font-size: 0.7rem;
+  }
+
+  .collage-sec img {
+    width: 135px;
+    height: 150px;
+  }
+  .collage-sec p{
+    font-size: .7rem;
+  }
+
+
+}
