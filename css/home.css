@@ -57,8 +57,28 @@ body {
 }
 
 .collage-sec img {
-  width: 20rem;
+  width: 100%;
   height: 30rem;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+.collage-sec {
+  margin-bottom: 1.5rem;
+}
+
+.collage-sec a {
+  text-decoration: none;
+  color: #575757;
+}
+
+.collage-sec p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 /* For Automatic Slider */
@@ -139,8 +159,38 @@ body {
   }
 
   .collage-sec img {
-    width: 190px;
-    height: 210px;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+  .collage-sec p {
+    font-size: 0.75rem;
+  }
+
+  .slider-item img {
+    width: 100%;
+    height: 500px;
+
+  }
+
+  .slider-item {
+    height: 290px;
+  }
+
+  .row {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .collage-sec {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -161,11 +211,8 @@ body {
     font-size: 0.7rem;
   }
 
-  .collage-sec img {
-    width: 135px;
-    height: 150px;
-  }
-  .collage-sec p{
+
+  .collage-sec p {
     font-size: .7rem;
   }
 
