@@ -5,7 +5,7 @@ body, html {
 }
 
 .hero {
-  background-image: url('/assets/namanverma-cover.jpg'); /* Use your collage image */
+  /
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body, html {
 
 .logo {
   max-width: 100%;
-  width: 143px;
+  width: 146px;
 }
 
 .enter-btn {
@@ -33,6 +33,25 @@ body, html {
   transition: all 0.3s ease-in-out;
 }
 
+#skipBtn{
+   background-color: #0d0d0d;
+  color: #ffffff ;
+  font-size: 25px;
+  border: none;
+  border-radius: 2;
+}
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  width: 100%;
+  height: 100vh;
+  transform: translate(-50%, -50% );
+  object-fit: cover;
+  z-index: -1;
+  background-color: black;
+  filter: brightness(0.9);
+}
 .enter-btn:hover {
   background-color: #fff;
   color: #000;

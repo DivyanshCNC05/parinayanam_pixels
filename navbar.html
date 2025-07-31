@@ -1,72 +1,143 @@
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Poppins Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<!-- <style>
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.center-logo {
+  width: 180px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.custom-link {
+  font-weight: 500;
+  color: #333333 !important;
+  font-size: 15px;
+  padding: 8px 10px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.nav-link{
+  font-size: 1.05rem;
+}
+
+.custom-link:hover {
+  color: #ff4d6d !important;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+</style> -->
 
 <style>
-img{
-    width: 200px;
-    height: 100%;
-    padding-top: 15px;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.nav-main{
-    flex-direction: column;
+.logo-img {
+  width: 160px;
+  height: auto;
+ 
 }
 
-.navbar-nav{
-    /* border-top: 2px solid black;
-    border-bottom: 2px solid black; */
-    margin-top: .5em;
-
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.nav-item{
-    padding:1rem;
+.custom-link {
+  font-weight: 500;
+  color: #333 !important;
+  text-transform: uppercase;
+  font-size: 1.02rem;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
 }
 
-.nav-item a{
-margin-left: 15px;
-margin-right: 15px;
-font-family:DREAM ;
+.custom-link:hover {
+  color: #050505 !important;
+  text-decoration: none;
 }
-
-@media screen and (max-width:990px) {
-  .navbar-brand  img{
-        padding-left:0 ;
-    }
-    .nav-main{
-    flex-direction:row;
-}
-}
-
 </style>
 
-<nav class="navbar navbar-expand-lg p-0" >
-  <div class="container-fluid nav-main">
-    <a class="navbar-brand" href="#">
-      <img src="assets/nav-logo.jpg" alt="">  
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
+  <div class="container-fluid d-flex align-items-center justify-content-between px-4">
+
+    <!-- MOBILE VIEW: Logo Left -->
+    <a class="navbar-brand d-lg-none" href="#">
+      <img src="assets/nav-logo.jpg" alt="Logo" class="logo-img">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- TOGGLER: Right side in mobile -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+
+    <!-- DESKTOP VIEW: Full Navbar -->
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="mainNavbar">
+
+      <!-- LEFT MENU (Desktop Only) -->
+      <ul class="navbar-nav d-none d-lg-flex flex-row">
+        <li class="nav-item px-5">
+          <a class="nav-link custom-link" href="home.html">HOME</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">GALLERIES</a>
+        <li class="nav-item px-5">
+          <a class="nav-link custom-link" href="gallery.html">GALLERIES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="stories.html">STORIES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="testimonial.html" >TESTIMONIALS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Eniquire.html">ENQUIRE</a>
+        <li class="nav-item px-5">
+          <a class="nav-link custom-link" href="stories.html">STORIES</a>
         </li>
       </ul>
+
+      <!-- CENTER LOGO (Only Desktop) -->
+      <a class="navbar-brand d-none d-lg-block" href="#">
+        <img src="assets/nav-logo.jpg" alt="Logo" class="logo-img">
+      </a>
+
+      <!-- RIGHT MENU (Desktop Only) -->
+      <ul class="navbar-nav d-none d-lg-flex flex-row">
+        <li class="nav-item px-5">
+          <a class="nav-link custom-link" href="testimonial.html">Our Work</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link custom-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item px-5">
+          <a class="nav-link custom-link" href="Eniquire.html">ENQUIRE</a>
+        </li>
+      </ul>
+
+      <!-- COLLAPSE MENU (Only Mobile) -->
+      <ul class="navbar-nav d-lg-none w-100 text-center">
+        <li class="nav-item"><a class="nav-link custom-link" href="home.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="gallery.html">GALLERIES</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="stories.html">STORIES</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="testimonial.html">TESTIMONIALS</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link custom-link" href="Eniquire.html">ENQUIRE</a></li>
+      </ul>
+
     </div>
   </div>
-</nav>
+</nav> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
