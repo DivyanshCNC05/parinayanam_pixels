@@ -6,12 +6,13 @@ body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .carousel,
 .carousel-item,
 .carousel-item img {
-  height: 100vh;
+  height: 95vh;
   object-fit: cover;
 }
 
@@ -114,6 +115,7 @@ body {
   height: auto;
   object-fit: contain;
   display: block;
+  overflow: hidden;
 }
 
 .slider-controls {
