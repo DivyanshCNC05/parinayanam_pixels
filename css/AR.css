@@ -48,3 +48,52 @@
     width: 1300px;
     height: 700px;
 }
+
+@media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  {
+    .img-section img{
+    height: 350px;
+    width: 900px;
+}
+.ritten-section h1{
+    font-size: 1.3rem;
+}
+.ritten-section .date{
+    font-size: 0.9rem;
+}
+.para p{
+    font-size: 0.9rem;
+    
+}
+.ijh img{
+    width: 1000px;
+    height: 300px;
+}
+.igh img{
+    width: 445px;
+    height: 308px;
+    padding-top: 4px;
+    
+} 
+.igh{
+    padding-right: 5px;
+    padding-left: 32px;
+    
+    
+}
+.ijh{
+   padding-left: 20px; 
+}
+   }
+
+
+
+
+
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  { }
