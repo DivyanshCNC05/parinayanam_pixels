@@ -50,3 +50,30 @@ body{
     height: 110px;
     width: 3500px;
 }
+
+
+  @media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  { }
+
+
+
+
+
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  {
+    .team-head{
+        font-size: 6rem;
+        color: #901f1a;
+        font-family: serif;
+    }
+
+    .team-name{
+        font-size: 3rem;
+        font-family: serif;
+    }
+   }
