@@ -38,3 +38,23 @@ image{
     text-decoration: none;
     font-size: .8rem;  
 }
+@media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  {
+    .image img{
+    margin-left: 25px;
+    max-width: 100%;
+    width: 360px;
+}
+   }
+
+
+
+
+
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  { }

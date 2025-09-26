@@ -239,6 +239,27 @@ body {
   .collage-sec p {
     font-size: .7rem;
   }
-
-
 }
+
+@media only screen   
+  and (min-device-width : 320px)   
+  and (max-device-width : 640px)  
+  { 
+
+    .carousel,
+.carousel-item,
+.carousel-item img {
+  height: 48vh;
+  object-fit: contain;
+}
+  }
+
+
+
+
+
+
+  @media only screen   
+  and (min-width: 1030px)   
+  and (max-width: 1605px)  
+  { }
