@@ -55,7 +55,18 @@ body{
   @media only screen   
   and (min-device-width : 320px)   
   and (max-device-width : 640px)  
-  { }
+  { 
+    .team-head{
+        font-size: 3rem;
+        color: #901f1a;
+        font-family: serif;
+    }
+
+    .team-name{
+        font-size: 1rem;
+        font-family: serif;
+    }
+  }
 
 
 
