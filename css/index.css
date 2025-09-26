@@ -37,6 +37,7 @@ html, body {
 
 /* Button styling */
 .enter-btn {
+  border: 1px solid black;
   background-color: #0d0d0d;
   color: #fff;
   border: none;

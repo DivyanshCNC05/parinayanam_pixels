@@ -7,12 +7,7 @@ fetch('navbar.html')
     nav.innerHTML=data
 })
 
-const footer = document.querySelector('.end')
-fetch('footer.html')
-.then(res=>res.text())
-.then(data=>{
-    footer.innerHTML=data
-})
+
 
 // const tabs = document.querySelector('.tabs')
 // fetch('tab.html')
