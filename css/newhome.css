@@ -1,0 +1,162 @@
+.carousel-item img {
+    object-fit: contain;
+}
+
+.written-main{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.written-main .heading {
+    color: #575757;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-family: "Dream Caps W00 Regular";
+}
+
+.written-main p {
+    color: #575757;
+    word-spacing: 2.5px;
+    line-height: 1.64rem;
+}
+
+.written-main h2 {
+    text-decoration: none;
+    color: #575757;
+    word-spacing: 2.5px;
+    line-height: 1.64rem;
+    font-family: "Dream Caps W00 Regular";
+}
+
+.written-main .last {
+    letter-spacing: 2.5px;
+}
+
+.written-main .lst {
+    letter-spacing: 2.3px;
+    font-size: .88rem;
+}
+
+/* For Automatic Slider */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slider-item {
+    height: 100%;
+    flex: 0 0 30%;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    overflow: hidden;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    box-sizing: border-box;
+    pointer-events: none;
+    /* Let buttons float without blocking */
+}
+
+.slider-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 24px;
+    border-radius: 50%;
+    pointer-events: all;
+    /* Enable button clicks */
+}
+
+ .collage-sec img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+.collage-sec p {
+    font-size: 0.75rem;
+    margin-left: 3rem;
+
+  }
+.collage-sec a {
+  text-decoration: none;
+  color: #575757;
+}
+.collage-sec p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.collage-sec {
+  margin-bottom: 1.5rem;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+
+    .carousel,
+    .carousel-item,
+    .carousel-item img {
+        height: 48vh;
+        object-fit: contain;
+    }
+
+    .slider-item {
+        flex: 0 0 100%;
+    }
+
+    .slider-controls {
+        position: absolute;
+        top: 37%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        padding: 0 10px;
+        box-sizing: border-box;
+        pointer-events: none;
+        /* Let buttons float without blocking */
+    }
+    .written-main .heading {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+  }
+  .written-main p {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1030px) and (max-width: 1605px) {}

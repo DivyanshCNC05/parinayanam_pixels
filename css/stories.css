@@ -5,7 +5,7 @@
      width: 100%;
     height: auto; /* Or set fixed height if needed */
     display: block;
-    object-fit: cover;
+    object-fit: contain;
 }
 .ritten-section h1{
     text-decoration: none;
