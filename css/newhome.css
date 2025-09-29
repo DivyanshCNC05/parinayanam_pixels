@@ -97,7 +97,21 @@
   border-radius: 5px;
   display: block;
   margin: 0 auto;
+  filter: grayscale(100%);
 }
+
+.collage-sec img:hover {
+  width: 20rem;
+  height: 30rem;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  filter:none;
+  transition: 0.5s all ease-in;
+}
+
+
 .collage-sec p {
     font-size: 0.75rem;
     margin-left: 3rem;
@@ -151,6 +165,16 @@
   .written-main p {
     font-size: 0.85rem;
   }
+
+  .collage-sec img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  filter: none;
+}
 }
 
 
